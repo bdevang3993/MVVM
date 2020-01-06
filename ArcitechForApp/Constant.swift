@@ -38,6 +38,6 @@ struct Alert {
 
 func setCommanHeaderView() -> CommanView {
     let headerViewXib:CommanView = CommanView().instanceFromNib()
-    headerViewXib.frame = CGRect(x: 0, y: 0, width: headerViewXib.frame.size.width, height: (screenHeight * 0.1))
+    headerViewXib.frame = CGRect(x: 0, y: 0, width: screenWidth, height: (screenHeight * 0.1))
     return headerViewXib
 }
