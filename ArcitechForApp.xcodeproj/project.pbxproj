@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52740D2B29ABC96111350E32 /* Pods_ArcitechForApp_ArcitechForAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DB7399C4E2F91DC861CD1A /* Pods_ArcitechForApp_ArcitechForAppUITests.framework */; };
+		8802A15A23B6715E0067BB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802A15923B6715E0067BB48 /* AppDelegate.swift */; };
+		8802A15C23B6715E0067BB48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802A15B23B6715E0067BB48 /* SceneDelegate.swift */; };
+		8802A15E23B6715E0067BB48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802A15D23B6715E0067BB48 /* ViewController.swift */; };
+		8802A16123B6715E0067BB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8802A15F23B6715E0067BB48 /* Main.storyboard */; };
+		8802A16323B671600067BB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8802A16223B671600067BB48 /* Assets.xcassets */; };
+		8802A16623B671600067BB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8802A16423B671600067BB48 /* LaunchScreen.storyboard */; };
+		8802A17123B671600067BB48 /* ArcitechForAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802A17023B671600067BB48 /* ArcitechForAppTests.swift */; };
+		8802A17C23B671600067BB48 /* ArcitechForAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802A17B23B671600067BB48 /* ArcitechForAppUITests.swift */; };
+		8802A18C23B67CC90067BB48 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802A18B23B67CC90067BB48 /* Constant.swift */; };
+		8802A18E23B683170067BB48 /* CustomEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802A18D23B683170067BB48 /* CustomEnums.swift */; };
+		8808CD1023BFA92200DC090F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8808CD0E23BFA92100DC090F /* UserModel.swift */; };
+		8808CD1123BFA92200DC090F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8808CD0F23BFA92100DC090F /* UserViewModel.swift */; };
+		8808CD1323BFB14400DC090F /* AllCustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8808CD1223BFB14400DC090F /* AllCustomMethods.swift */; };
+		8808CD1523BFB60400DC090F /* AllExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8808CD1423BFB60400DC090F /* AllExtensions.swift */; };
+		8808CD1823BFBB9100DC090F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8808CD1723BFBB9100DC090F /* SignUpViewController.swift */; };
+		8808CD1A23BFC28A00DC090F /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8808CD1923BFC28A00DC090F /* SignUpModel.swift */; };
+		8808CD1C23BFC29E00DC090F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8808CD1B23BFC29E00DC090F /* SignUpViewModel.swift */; };
+		8811965023C0E35100BD7544 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8811964F23C0E35100BD7544 /* AuthenticationServices.framework */; };
+		8811965223C0E86400BD7544 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8811965123C0E86400BD7544 /* CloudKit.framework */; };
+		8880391923B730F800F3A6EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8880391823B730F800F3A6EC /* SystemConfiguration.framework */; };
+		8880391B23B734BA00F3A6EC /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880391A23B734BA00F3A6EC /* APIRequest.swift */; };
+		8880396323B788D900F3A6EC /* CommanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8880396123B788D900F3A6EC /* CommanView.xib */; };
+		8880396423B788D900F3A6EC /* CommanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880396223B788D900F3A6EC /* CommanView.swift */; };
+		88FE139223C0618100489BD0 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE139123C0618100489BD0 /* Source.swift */; };
+		88FE139423C061A700489BD0 /* SourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE139323C061A700489BD0 /* SourceViewModel.swift */; };
+		88FE139623C061C100489BD0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE139523C061C100489BD0 /* CustomCell.swift */; };
+		88FE139823C0623D00489BD0 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE139723C0623D00489BD0 /* InformationViewController.swift */; };
+		AC524EA029C34FE252F43F02 /* Pods_ArcitechForApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F773D27559A2305B1CF8609D /* Pods_ArcitechForApp.framework */; };
+		DB0B7D18CDC9C2E9FB9C3DB6 /* Pods_ArcitechForAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9A3A6624B82305AE2BAA5E /* Pods_ArcitechForAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8802A16D23B671600067BB48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8802A14E23B6715E0067BB48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8802A15523B6715E0067BB48;
+			remoteInfo = ArcitechForApp;
+		};
+		8802A17823B671600067BB48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8802A14E23B6715E0067BB48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8802A15523B6715E0067BB48;
+			remoteInfo = ArcitechForApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01473A06EA09F58BFE24112F /* Pods-ArcitechForAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcitechForAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ArcitechForAppTests/Pods-ArcitechForAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0DC6BC1270EC26D3533C2DD8 /* Pods-ArcitechForApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcitechForApp.release.xcconfig"; path = "Target Support Files/Pods-ArcitechForApp/Pods-ArcitechForApp.release.xcconfig"; sourceTree = "<group>"; };
+		228C2CC08B22886C5111404E /* Pods-ArcitechForApp-ArcitechForAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcitechForApp-ArcitechForAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ArcitechForApp-ArcitechForAppUITests/Pods-ArcitechForApp-ArcitechForAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		45DB7399C4E2F91DC861CD1A /* Pods_ArcitechForApp_ArcitechForAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArcitechForApp_ArcitechForAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C83C82FC615E4E3A70ECA3 /* Pods-ArcitechForAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcitechForAppTests.release.xcconfig"; path = "Target Support Files/Pods-ArcitechForAppTests/Pods-ArcitechForAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8802A15623B6715E0067BB48 /* ArcitechForApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcitechForApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8802A15923B6715E0067BB48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8802A15B23B6715E0067BB48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8802A15D23B6715E0067BB48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8802A16023B6715E0067BB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8802A16223B671600067BB48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8802A16523B671600067BB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8802A16723B671600067BB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8802A16C23B671600067BB48 /* ArcitechForAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcitechForAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8802A17023B671600067BB48 /* ArcitechForAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcitechForAppTests.swift; sourceTree = "<group>"; };
+		8802A17223B671600067BB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8802A17723B671600067BB48 /* ArcitechForAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcitechForAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8802A17B23B671600067BB48 /* ArcitechForAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcitechForAppUITests.swift; sourceTree = "<group>"; };
+		8802A17D23B671600067BB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8802A18B23B67CC90067BB48 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8802A18D23B683170067BB48 /* CustomEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEnums.swift; sourceTree = "<group>"; };
+		8808CD0E23BFA92100DC090F /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8808CD0F23BFA92100DC090F /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		8808CD1223BFB14400DC090F /* AllCustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCustomMethods.swift; sourceTree = "<group>"; };
+		8808CD1423BFB60400DC090F /* AllExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExtensions.swift; sourceTree = "<group>"; };
+		8808CD1723BFBB9100DC090F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8808CD1923BFC28A00DC090F /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		8808CD1B23BFC29E00DC090F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		8811964E23C0E32000BD7544 /* ArcitechForApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArcitechForApp.entitlements; sourceTree = "<group>"; };
+		8811964F23C0E35100BD7544 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		8811965123C0E86400BD7544 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		8880391823B730F800F3A6EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8880391A23B734BA00F3A6EC /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		8880396123B788D900F3A6EC /* CommanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommanView.xib; sourceTree = "<group>"; };
+		8880396223B788D900F3A6EC /* CommanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommanView.swift; sourceTree = "<group>"; };
+		88FE139123C0618100489BD0 /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		88FE139323C061A700489BD0 /* SourceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceViewModel.swift; sourceTree = "<group>"; };
+		88FE139523C061C100489BD0 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		88FE139723C0623D00489BD0 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		9F9A3A6624B82305AE2BAA5E /* Pods_ArcitechForAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArcitechForAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01C77B5D841876D978CA27D /* Pods-ArcitechForApp-ArcitechForAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcitechForApp-ArcitechForAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ArcitechForApp-ArcitechForAppUITests/Pods-ArcitechForApp-ArcitechForAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD5D5035233EC6A6D832B8E3 /* Pods-ArcitechForApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcitechForApp.debug.xcconfig"; path = "Target Support Files/Pods-ArcitechForApp/Pods-ArcitechForApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F773D27559A2305B1CF8609D /* Pods_ArcitechForApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArcitechForApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8802A15323B6715E0067BB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8811965023C0E35100BD7544 /* AuthenticationServices.framework in Frameworks */,
+				8811965223C0E86400BD7544 /* CloudKit.framework in Frameworks */,
+				8880391923B730F800F3A6EC /* SystemConfiguration.framework in Frameworks */,
+				AC524EA029C34FE252F43F02 /* Pods_ArcitechForApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8802A16923B671600067BB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0B7D18CDC9C2E9FB9C3DB6 /* Pods_ArcitechForAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8802A17423B671600067BB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52740D2B29ABC96111350E32 /* Pods_ArcitechForApp_ArcitechForAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8802A14D23B6715E0067BB48 = {
+			isa = PBXGroup;
+			children = (
+				8802A15823B6715E0067BB48 /* ArcitechForApp */,
+				8802A16F23B671600067BB48 /* ArcitechForAppTests */,
+				8802A17A23B671600067BB48 /* ArcitechForAppUITests */,
+				8802A15723B6715E0067BB48 /* Products */,
+				FB60CC6DFD408CB147B40AFF /* Pods */,
+				DEAF5A08D047EC67E72645C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8802A15723B6715E0067BB48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8802A15623B6715E0067BB48 /* ArcitechForApp.app */,
+				8802A16C23B671600067BB48 /* ArcitechForAppTests.xctest */,
+				8802A17723B671600067BB48 /* ArcitechForAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8802A15823B6715E0067BB48 /* ArcitechForApp */ = {
+			isa = PBXGroup;
+			children = (
+				8811964E23C0E32000BD7544 /* ArcitechForApp.entitlements */,
+				8802A15923B6715E0067BB48 /* AppDelegate.swift */,
+				8802A15B23B6715E0067BB48 /* SceneDelegate.swift */,
+				8802A18B23B67CC90067BB48 /* Constant.swift */,
+				8808CD0C23BFA77C00DC090F /* CustomClass */,
+				8880391C23B74EEF00F3A6EC /* Commanxib */,
+				8808CD1623BFBB5900DC090F /* SignUpViewController */,
+				8808CD0D23BFA8AE00DC090F /* LoginViewController */,
+				88FE138D23C0612600489BD0 /* InformationViewController */,
+				8880391523B7301800F3A6EC /* APIRequest */,
+				8802A15F23B6715E0067BB48 /* Main.storyboard */,
+				8802A16223B671600067BB48 /* Assets.xcassets */,
+				8802A16423B671600067BB48 /* LaunchScreen.storyboard */,
+				8802A16723B671600067BB48 /* Info.plist */,
+			);
+			path = ArcitechForApp;
+			sourceTree = "<group>";
+		};
+		8802A16F23B671600067BB48 /* ArcitechForAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8802A17023B671600067BB48 /* ArcitechForAppTests.swift */,
+				8802A17223B671600067BB48 /* Info.plist */,
+			);
+			path = ArcitechForAppTests;
+			sourceTree = "<group>";
+		};
+		8802A17A23B671600067BB48 /* ArcitechForAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8802A17B23B671600067BB48 /* ArcitechForAppUITests.swift */,
+				8802A17D23B671600067BB48 /* Info.plist */,
+			);
+			path = ArcitechForAppUITests;
+			sourceTree = "<group>";
+		};
+		8808CD0C23BFA77C00DC090F /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				8802A18D23B683170067BB48 /* CustomEnums.swift */,
+				8808CD1223BFB14400DC090F /* AllCustomMethods.swift */,
+				8808CD1423BFB60400DC090F /* AllExtensions.swift */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		8808CD0D23BFA8AE00DC090F /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8808CD0E23BFA92100DC090F /* UserModel.swift */,
+				8808CD0F23BFA92100DC090F /* UserViewModel.swift */,
+				8802A15D23B6715E0067BB48 /* ViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		8808CD1623BFBB5900DC090F /* SignUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8808CD1923BFC28A00DC090F /* SignUpModel.swift */,
+				8808CD1B23BFC29E00DC090F /* SignUpViewModel.swift */,
+				8808CD1723BFBB9100DC090F /* SignUpViewController.swift */,
+			);
+			path = SignUpViewController;
+			sourceTree = "<group>";
+		};
+		8880391523B7301800F3A6EC /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				8880391A23B734BA00F3A6EC /* APIRequest.swift */,
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		8880391C23B74EEF00F3A6EC /* Commanxib */ = {
+			isa = PBXGroup;
+			children = (
+				8880396223B788D900F3A6EC /* CommanView.swift */,
+				8880396123B788D900F3A6EC /* CommanView.xib */,
+			);
+			path = Commanxib;
+			sourceTree = "<group>";
+		};
+		88FE138D23C0612600489BD0 /* InformationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				88FE139123C0618100489BD0 /* Source.swift */,
+				88FE139323C061A700489BD0 /* SourceViewModel.swift */,
+				88FE139523C061C100489BD0 /* CustomCell.swift */,
+				88FE139723C0623D00489BD0 /* InformationViewController.swift */,
+			);
+			path = InformationViewController;
+			sourceTree = "<group>";
+		};
+		DEAF5A08D047EC67E72645C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8811965123C0E86400BD7544 /* CloudKit.framework */,
+				8811964F23C0E35100BD7544 /* AuthenticationServices.framework */,
+				8880391823B730F800F3A6EC /* SystemConfiguration.framework */,
+				F773D27559A2305B1CF8609D /* Pods_ArcitechForApp.framework */,
+				45DB7399C4E2F91DC861CD1A /* Pods_ArcitechForApp_ArcitechForAppUITests.framework */,
+				9F9A3A6624B82305AE2BAA5E /* Pods_ArcitechForAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB60CC6DFD408CB147B40AFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D5035233EC6A6D832B8E3 /* Pods-ArcitechForApp.debug.xcconfig */,
+				0DC6BC1270EC26D3533C2DD8 /* Pods-ArcitechForApp.release.xcconfig */,
+				228C2CC08B22886C5111404E /* Pods-ArcitechForApp-ArcitechForAppUITests.debug.xcconfig */,
+				B01C77B5D841876D978CA27D /* Pods-ArcitechForApp-ArcitechForAppUITests.release.xcconfig */,
+				01473A06EA09F58BFE24112F /* Pods-ArcitechForAppTests.debug.xcconfig */,
+				53C83C82FC615E4E3A70ECA3 /* Pods-ArcitechForAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8802A15523B6715E0067BB48 /* ArcitechForApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8802A18023B671600067BB48 /* Build configuration list for PBXNativeTarget "ArcitechForApp" */;
+			buildPhases = (
+				76FB5B9DEF55A6CF955A716A /* [CP] Check Pods Manifest.lock */,
+				8802A15223B6715E0067BB48 /* Sources */,
+				8802A15323B6715E0067BB48 /* Frameworks */,
+				8802A15423B6715E0067BB48 /* Resources */,
+				4B1BA2B12E7D7F3052EFC237 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArcitechForApp;
+			productName = ArcitechForApp;
+			productReference = 8802A15623B6715E0067BB48 /* ArcitechForApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8802A16B23B671600067BB48 /* ArcitechForAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8802A18323B671600067BB48 /* Build configuration list for PBXNativeTarget "ArcitechForAppTests" */;
+			buildPhases = (
+				7CA2DF0CFDDC1235AB660708 /* [CP] Check Pods Manifest.lock */,
+				8802A16823B671600067BB48 /* Sources */,
+				8802A16923B671600067BB48 /* Frameworks */,
+				8802A16A23B671600067BB48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8802A16E23B671600067BB48 /* PBXTargetDependency */,
+			);
+			name = ArcitechForAppTests;
+			productName = ArcitechForAppTests;
+			productReference = 8802A16C23B671600067BB48 /* ArcitechForAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8802A17623B671600067BB48 /* ArcitechForAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8802A18623B671600067BB48 /* Build configuration list for PBXNativeTarget "ArcitechForAppUITests" */;
+			buildPhases = (
+				6473CEE6F3C0EDC9412DDB65 /* [CP] Check Pods Manifest.lock */,
+				8802A17323B671600067BB48 /* Sources */,
+				8802A17423B671600067BB48 /* Frameworks */,
+				8802A17523B671600067BB48 /* Resources */,
+				E63B093E0DBF9594B0A55191 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8802A17923B671600067BB48 /* PBXTargetDependency */,
+			);
+			name = ArcitechForAppUITests;
+			productName = ArcitechForAppUITests;
+			productReference = 8802A17723B671600067BB48 /* ArcitechForAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8802A14E23B6715E0067BB48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "devang bhavsar";
+				TargetAttributes = {
+					8802A15523B6715E0067BB48 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					8802A16B23B671600067BB48 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 8802A15523B6715E0067BB48;
+					};
+					8802A17623B671600067BB48 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 8802A15523B6715E0067BB48;
+					};
+				};
+			};
+			buildConfigurationList = 8802A15123B6715E0067BB48 /* Build configuration list for PBXProject "ArcitechForApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8802A14D23B6715E0067BB48;
+			productRefGroup = 8802A15723B6715E0067BB48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8802A15523B6715E0067BB48 /* ArcitechForApp */,
+				8802A16B23B671600067BB48 /* ArcitechForAppTests */,
+				8802A17623B671600067BB48 /* ArcitechForAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8802A15423B6715E0067BB48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8802A16623B671600067BB48 /* LaunchScreen.storyboard in Resources */,
+				8880396323B788D900F3A6EC /* CommanView.xib in Resources */,
+				8802A16323B671600067BB48 /* Assets.xcassets in Resources */,
+				8802A16123B6715E0067BB48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8802A16A23B671600067BB48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8802A17523B671600067BB48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B1BA2B12E7D7F3052EFC237 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArcitechForApp/Pods-ArcitechForApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArcitechForApp/Pods-ArcitechForApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArcitechForApp/Pods-ArcitechForApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6473CEE6F3C0EDC9412DDB65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArcitechForApp-ArcitechForAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76FB5B9DEF55A6CF955A716A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArcitechForApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CA2DF0CFDDC1235AB660708 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArcitechForAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E63B093E0DBF9594B0A55191 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArcitechForApp-ArcitechForAppUITests/Pods-ArcitechForApp-ArcitechForAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArcitechForApp-ArcitechForAppUITests/Pods-ArcitechForApp-ArcitechForAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArcitechForApp-ArcitechForAppUITests/Pods-ArcitechForApp-ArcitechForAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8802A15223B6715E0067BB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8808CD1323BFB14400DC090F /* AllCustomMethods.swift in Sources */,
+				8880396423B788D900F3A6EC /* CommanView.swift in Sources */,
+				88FE139623C061C100489BD0 /* CustomCell.swift in Sources */,
+				8802A18E23B683170067BB48 /* CustomEnums.swift in Sources */,
+				8808CD1123BFA92200DC090F /* UserViewModel.swift in Sources */,
+				8802A15E23B6715E0067BB48 /* ViewController.swift in Sources */,
+				8808CD1A23BFC28A00DC090F /* SignUpModel.swift in Sources */,
+				8808CD1C23BFC29E00DC090F /* SignUpViewModel.swift in Sources */,
+				8808CD1523BFB60400DC090F /* AllExtensions.swift in Sources */,
+				88FE139223C0618100489BD0 /* Source.swift in Sources */,
+				8808CD1823BFBB9100DC090F /* SignUpViewController.swift in Sources */,
+				8802A18C23B67CC90067BB48 /* Constant.swift in Sources */,
+				8802A15A23B6715E0067BB48 /* AppDelegate.swift in Sources */,
+				8880391B23B734BA00F3A6EC /* APIRequest.swift in Sources */,
+				88FE139423C061A700489BD0 /* SourceViewModel.swift in Sources */,
+				8808CD1023BFA92200DC090F /* UserModel.swift in Sources */,
+				8802A15C23B6715E0067BB48 /* SceneDelegate.swift in Sources */,
+				88FE139823C0623D00489BD0 /* InformationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8802A16823B671600067BB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8802A17123B671600067BB48 /* ArcitechForAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8802A17323B671600067BB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8802A17C23B671600067BB48 /* ArcitechForAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8802A16E23B671600067BB48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8802A15523B6715E0067BB48 /* ArcitechForApp */;
+			targetProxy = 8802A16D23B671600067BB48 /* PBXContainerItemProxy */;
+		};
+		8802A17923B671600067BB48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8802A15523B6715E0067BB48 /* ArcitechForApp */;
+			targetProxy = 8802A17823B671600067BB48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8802A15F23B6715E0067BB48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8802A16023B6715E0067BB48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8802A16423B671600067BB48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8802A16523B671600067BB48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8802A17E23B671600067BB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8802A17F23B671600067BB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8802A18123B671600067BB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD5D5035233EC6A6D832B8E3 /* Pods-ArcitechForApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ArcitechForApp/ArcitechForApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = JAC5BA3SM4;
+				INFOPLIST_FILE = ArcitechForApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.ArcitechForApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8802A18223B671600067BB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DC6BC1270EC26D3533C2DD8 /* Pods-ArcitechForApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ArcitechForApp/ArcitechForApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JAC5BA3SM4;
+				INFOPLIST_FILE = ArcitechForApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.ArcitechForApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8802A18423B671600067BB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01473A06EA09F58BFE24112F /* Pods-ArcitechForAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ArcitechForAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.ArcitechForAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcitechForApp.app/ArcitechForApp";
+			};
+			name = Debug;
+		};
+		8802A18523B671600067BB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C83C82FC615E4E3A70ECA3 /* Pods-ArcitechForAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ArcitechForAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.ArcitechForAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcitechForApp.app/ArcitechForApp";
+			};
+			name = Release;
+		};
+		8802A18723B671600067BB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 228C2CC08B22886C5111404E /* Pods-ArcitechForApp-ArcitechForAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ArcitechForAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.ArcitechForAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArcitechForApp;
+			};
+			name = Debug;
+		};
+		8802A18823B671600067BB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B01C77B5D841876D978CA27D /* Pods-ArcitechForApp-ArcitechForAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ArcitechForAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.ArcitechForAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArcitechForApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8802A15123B6715E0067BB48 /* Build configuration list for PBXProject "ArcitechForApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8802A17E23B671600067BB48 /* Debug */,
+				8802A17F23B671600067BB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8802A18023B671600067BB48 /* Build configuration list for PBXNativeTarget "ArcitechForApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8802A18123B671600067BB48 /* Debug */,
+				8802A18223B671600067BB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8802A18323B671600067BB48 /* Build configuration list for PBXNativeTarget "ArcitechForAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8802A18423B671600067BB48 /* Debug */,
+				8802A18523B671600067BB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8802A18623B671600067BB48 /* Build configuration list for PBXNativeTarget "ArcitechForAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8802A18723B671600067BB48 /* Debug */,
+				8802A18823B671600067BB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8802A14E23B6715E0067BB48 /* Project object */;
+}
