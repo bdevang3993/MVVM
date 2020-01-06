@@ -244,9 +244,9 @@
 		88FE138D23C0612600489BD0 /* InformationViewController */ = {
 			isa = PBXGroup;
 			children = (
+				88FE139523C061C100489BD0 /* CustomCell.swift */,
 				88FE139123C0618100489BD0 /* Source.swift */,
 				88FE139323C061A700489BD0 /* SourceViewModel.swift */,
-				88FE139523C061C100489BD0 /* CustomCell.swift */,
 				88FE139723C0623D00489BD0 /* InformationViewController.swift */,
 			);
 			path = InformationViewController;

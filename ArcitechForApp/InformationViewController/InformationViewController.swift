@@ -10,8 +10,9 @@ import UIKit
 
 class InformationViewController: UIViewController {
     let tableView = UITableView()
-       let cellId = "CellId"
-       var viewModel = SourceViewModel()
+    let cellId = "CellId"
+    var viewModel = SourceViewModel()
+    var apiResponse:TaAPICallBack?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,38 +21,26 @@ class InformationViewController: UIViewController {
                tableView.frame = view.frame
                tableView.dataSource = self
                tableView.delegate = self
-               self.fetchData()
+        self.setAPICall()
     }
-    func fetchData() {
-             do
-             {
-                 let getInfo = baseURL + otherURL
-                   DispatchQueue.global(qos: .userInitiated).sync {
-                    APIRequest.shared.getAPIRequest(serviceName: getInfo, completionBlockSuccess: { (js:JSonData) in
-                        self.viewModel.arrSoureceData = js.source
-                        self.tableView.reloadData()
-                    }) { (value) in
-                        Alert().showAlert(message: value as! String, viewController: self)
-                    }
-                   }
-             }
-             catch
-             {
-                 Alert().showAlert(message: AppMessage().internetIssue, viewController: self)
-                 //SVProgressHUD.dismiss()
-//                 Alert().showAlertView(title: AppMessage.appName , message: AppMessage.internetIssue , view: self.view, viewController: self)
-             }
-         }
-    
-//    func fetchData() {
-//         Service.fetchData(completion: { //closure
-//             sourceMA in
-//             self.viewModel.arrSoureceData = sourceMA
-//             DispatchQueue.main.async {
-//                 self.tableView.reloadData()
-//             }
-//         })
-//     }
+    //MARK:- API Call
+    func setAPICall() {
+        var message = ""
+        viewModel.fetchData()
+        viewModel.apiResponse = { [weak self] value in
+            message = value
+            if message == "success"
+            {
+                if self != nil {
+                    self!.tableView.reloadData()
+                }
+            }
+            else {
+                Alert().showAlert(message: message, viewController: self!)
+            }
+        }
+       
+    }
     /*
     // MARK: - Navigation
 
