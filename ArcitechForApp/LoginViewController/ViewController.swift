@@ -25,6 +25,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     //MARK:- HeaderView
     func setHeaderView() {
          headerViewXib = setCommanHeaderView()
+        headerView.frame = headerViewXib!.frame
                headerViewXib!.lblTitle.text = "Login Screen"
                headerViewXib?.btnHeader.addTarget(self, action: #selector(leftClicked), for: .touchUpInside)
         headerView.addSubview(headerViewXib!)
@@ -54,9 +55,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     @IBAction func btnSubmitClicked(_ sender: Any) {
         txtEmail.text = removeWhiteSpace(strData: txtEmail.text!)
+        userViewModel.email = txtEmail.text!
         txtPassword.text = removeWhiteSpace(strData: txtPassword.text!)
-        userViewModel.userModel.email = txtEmail.text!
-        userViewModel.userModel.password = txtPassword.text!
+        userViewModel.password = txtPassword.text!
+//        userViewModel.userModel.email = txtEmail.text!
+//        userViewModel.userModel.password = txtPassword.text!
         do {
             let value = try userViewModel.validationOfData()//validationOfData()
             if value {

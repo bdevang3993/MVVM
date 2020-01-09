@@ -10,7 +10,19 @@ import Foundation
 class UserViewModel: NSObject {
     var userModel = UserModel(email: "", password: "")
     var signUpModel = SignUpModel(name: "", email: "", password: "", cnfPassword: "")
-   
+    //MARK:- Property observer
+    var email =  "" {
+        didSet {
+            print("email Id = \(email)")
+            userModel.email = email
+        }
+    }
+    var password = "" {
+        didSet {
+            userModel.password = password
+            print("Pasword = \(password)")
+        }
+    }
     func validationOfData() throws -> Bool {
         let isvalidate = isValidEmail(emailStr: userModel.email)
         let validateCredential:Bool = matchCredential()
