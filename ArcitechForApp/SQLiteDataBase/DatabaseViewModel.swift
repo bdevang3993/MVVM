@@ -23,26 +23,29 @@ class DatabaseViewModel:NSObject{
         }
     }
     //MARK:- Fetch or Create Database
-    func setUpAllTheValue() {
+    func setUpAllTheValue() -> String {
+        var strvalue:String = "success"
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
             .appendingPathComponent("HeroesDatabase.sqlite")
         
         
         if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
             print("error opening database")
+            strvalue = "error opening database"
         }
         
         if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS Heroes (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, powerrank INTEGER)", nil, nil, nil) != SQLITE_OK {
             let errmsg = String(cString: sqlite3_errmsg(db)!)
+            strvalue = errmsg
             print("error creating table: \(errmsg)")
         }
-        
-        readValues()
+       strvalue = readValues()
+        return strvalue
     }
     //MARK:- Fetch value from Database
-    func readValues(){
+    func readValues() -> String{
         //heroList.removeAll()
-
+        var value = "success"
         let queryString = "SELECT * FROM Heroes"
         
         var stmt:OpaquePointer?
@@ -50,7 +53,7 @@ class DatabaseViewModel:NSObject{
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error preparing insert: \(errmsg)")
-            return
+            value = errmsg
         }
         
         while(sqlite3_step(stmt) == SQLITE_ROW){
@@ -64,6 +67,8 @@ class DatabaseViewModel:NSObject{
         }
         
       //  self.tableViewHeroes.reloadData()
+        
+        return value
     }
 //MARK:- Add value in Database
     func addValueinDatabase()throws -> String {
@@ -112,7 +117,7 @@ class DatabaseViewModel:NSObject{
         //              textFieldName.text=""
         //              textFieldPowerRanking.text=""
         
-        readValues()
+       strMessage = readValues()
     
         print("Herro saved successfully")
         return strMessage

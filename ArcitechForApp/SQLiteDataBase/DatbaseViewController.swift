@@ -20,9 +20,15 @@ class DatbaseViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.tblViewHeros.dataSource = self
         self.tblViewHeros.delegate = self
-        objDatabaseViewModel.setUpAllTheValue()
-        self.tblViewHeros.reloadData()
         self.setHeaderView()
+        let allValue = objDatabaseViewModel.setUpAllTheValue()
+        if allValue == "success" {
+            self.tblViewHeros.reloadData()
+        }else {
+            Alert().showAlert(message: allValue, viewController: self)
+        }
+        
+        
     }
     
     //MARK:- HeaderView
