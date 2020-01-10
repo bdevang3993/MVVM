@@ -26,13 +26,13 @@ class UserViewModel: NSObject {
     func validationOfData() throws -> Bool {
         let isvalidate = isValidEmail(emailStr: userModel.email)
         let validateCredential:Bool = matchCredential()
-          if userModel.email == "" {
+        if userModel.email.isEmpty {
               throw LoginValidation.emailEmpty
           }
           else if !isvalidate {
                 throw LoginValidation.emailValidation
           }
-          else if userModel.password == "" {
+        else if userModel.password.isEmpty {
               throw LoginValidation.passwordEmpty
           }
           else if !validateCredential {

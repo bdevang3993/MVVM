@@ -9,7 +9,7 @@
 import Foundation
 
 enum LoginValidation:Error {
-    case emailEmpty,emailValidation,emailIdnotmatch,passwordEmpty,confirmPassword,passwordNotMatch,nameEmpty
+    case emailEmpty,emailValidation,emailIdnotmatch,passwordEmpty,confirmPassword,passwordNotMatch,nameEmpty,descriptionEmpty
     
     func loginValidationDescription() -> String {
         switch self {
@@ -27,6 +27,12 @@ enum LoginValidation:Error {
             return "Password does not match"
         case .nameEmpty:
             return "Please provide your name"
+        case .descriptionEmpty:
+            return "Please provide description"
         }
     }
+}
+enum ShowAlertMessage:String {
+    case errorMessage
+   
 }

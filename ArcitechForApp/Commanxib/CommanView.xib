@@ -28,16 +28,26 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" image="signUp"/>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZE-2C-eqB">
+                            <rect key="frame" x="10" y="35" width="46" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="W5R-fT-Qg8"/>
+                                <constraint firstAttribute="width" constant="46" id="qox-d8-quh"/>
+                            </constraints>
+                            <state key="normal" image="back"/>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="FTC-of-JJt" firstAttribute="centerY" secondItem="pUK-2x-mPa" secondAttribute="centerY" id="7k9-0A-TGb"/>
                         <constraint firstItem="Yes-Rk-nJI" firstAttribute="top" secondItem="pUK-2x-mPa" secondAttribute="top" constant="10" id="8ks-lz-lyP"/>
+                        <constraint firstItem="LZE-2C-eqB" firstAttribute="leading" secondItem="pUK-2x-mPa" secondAttribute="leading" constant="10" id="CX0-Wg-kuh"/>
                         <constraint firstItem="FTC-of-JJt" firstAttribute="height" secondItem="pUK-2x-mPa" secondAttribute="height" multiplier="0.6" id="FjB-M4-1tc"/>
                         <constraint firstAttribute="bottom" secondItem="Yes-Rk-nJI" secondAttribute="bottom" constant="10" id="J3g-Ym-Mrd"/>
                         <constraint firstItem="FTC-of-JJt" firstAttribute="leading" secondItem="Yes-Rk-nJI" secondAttribute="trailing" id="LrA-tI-ktg"/>
                         <constraint firstItem="FTC-of-JJt" firstAttribute="width" secondItem="pUK-2x-mPa" secondAttribute="width" multiplier="0.2" id="ZFu-L3-BF4"/>
                         <constraint firstAttribute="trailing" secondItem="FTC-of-JJt" secondAttribute="trailing" constant="10" id="gfg-kz-NFr"/>
+                        <constraint firstItem="LZE-2C-eqB" firstAttribute="centerY" secondItem="pUK-2x-mPa" secondAttribute="centerY" id="hcp-Ez-cPG"/>
                         <constraint firstItem="Yes-Rk-nJI" firstAttribute="leading" secondItem="pUK-2x-mPa" secondAttribute="leading" constant="64" id="pp9-er-oMA"/>
                     </constraints>
                 </view>
@@ -52,6 +62,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="btnBack" destination="LZE-2C-eqB" id="9Hn-4L-nKX"/>
                 <outlet property="btnHeader" destination="FTC-of-JJt" id="F0U-G9-5PR"/>
                 <outlet property="lblTitle" destination="Yes-Rk-nJI" id="hYj-KT-lWD"/>
             </connections>
@@ -59,6 +70,7 @@
         </view>
     </objects>
     <resources>
+        <image name="back" width="920" height="750"/>
         <image name="signUp" width="256" height="256"/>
     </resources>
 </document>

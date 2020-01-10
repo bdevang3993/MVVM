@@ -30,6 +30,8 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
             headerViewXib = setCommanHeaderView()
             headerViewXib!.lblTitle.text = "SignUp"
         headerViewXib!.btnHeader.isHidden = true
+        headerViewXib!.btnBack.isHidden = false
+        headerViewXib?.btnBack.addTarget(self, action: #selector(backClicked), for: .touchUpInside)
            headerView.addSubview(headerViewXib!)
        }
     
@@ -45,6 +47,10 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         txtCnfPassword.delegate = self
         txtCnfPassword = setCustomTextField(self: txtCnfPassword, placeHolder: "Confirm password")
         txtCnfPassword.isSecureTextEntry = true
+    }
+    
+    @objc func backClicked(){
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func btnSubmitClicked(_ sender: Any) {
         self.resignAllTextField()

@@ -26,6 +26,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     func setHeaderView() {
          headerViewXib = setCommanHeaderView()
         headerView.frame = headerViewXib!.frame
+        headerViewXib?.btnBack.isHidden = true
                headerViewXib!.lblTitle.text = "Login Screen"
                headerViewXib?.btnHeader.addTarget(self, action: #selector(leftClicked), for: .touchUpInside)
         headerView.addSubview(headerViewXib!)
@@ -79,5 +80,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
              Alert().showAlert(message: LoginValidation.emailIdnotmatch.loginValidationDescription(), viewController: self)
         }
     }
+    @IBAction func bntDatabaseDemoClicked(_ sender: Any) {
+        let objDatabase  = self.storyboard?.instantiateViewController(identifier: "DatbaseViewController") as! DatbaseViewController
+        self.navigationController?.pushViewController(objDatabase, animated: true)
+    }
+    
 }
 

@@ -11,10 +11,11 @@ import UIKit
 class CommanView: UIView {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var btnHeader: UIButton!
+    @IBOutlet weak var btnBack: UIButton!
     
     public override init(frame: CGRect) {
              super .init(frame: frame)
-
+       
          }
          
          required public init?(coder aDecoder: NSCoder) {
