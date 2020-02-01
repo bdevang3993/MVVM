@@ -51,6 +51,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     func moveToNextView() {
         print("Move to next view")
+      
         let objInformation = self.storyboard?.instantiateViewController(identifier: "InformationViewController") as! InformationViewController
         self.navigationController?.pushViewController(objInformation, animated: true)
     }
@@ -81,8 +82,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
     }
     @IBAction func bntDatabaseDemoClicked(_ sender: Any) {
-        let objDatabase  = self.storyboard?.instantiateViewController(identifier: "DatbaseViewController") as! DatbaseViewController
-        self.navigationController?.pushViewController(objDatabase, animated: true)
+        
+        let objData = self.storyboard?.instantiateViewController(identifier: "CartViewController") as! CartViewController
+              self.navigationController?.pushViewController(objData, animated: true)
+//        let objDatabase  = self.storyboard?.instantiateViewController(identifier: "DatbaseViewController") as! DatbaseViewController
+//        self.navigationController?.pushViewController(objDatabase, animated: true)
     }
     
 }

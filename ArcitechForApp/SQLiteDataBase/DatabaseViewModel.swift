@@ -10,6 +10,7 @@ import Foundation
 import SQLite3
 
 class DatabaseViewModel:NSObject{
+    
     var arrHeroData = [HeroModel]()
     var db: OpaquePointer?
     var nameOfPerson:String = "" {
@@ -45,6 +46,7 @@ class DatabaseViewModel:NSObject{
     //MARK:- Fetch value from Database
     func readValues() -> String{
         //heroList.removeAll()
+        arrHeroData.removeAll()
         var value = "success"
         let queryString = "SELECT * FROM Heroes"
         

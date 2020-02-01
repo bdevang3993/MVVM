@@ -15,6 +15,7 @@ class DatbaseViewController: UIViewController {
     @IBOutlet weak var viewHeader: UIView!
     var headerViewXib:CommanView?
     var objDatabaseViewModel = DatabaseViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,8 +28,6 @@ class DatbaseViewController: UIViewController {
         }else {
             Alert().showAlert(message: allValue, viewController: self)
         }
-        
-        
     }
     
     //MARK:- HeaderView
