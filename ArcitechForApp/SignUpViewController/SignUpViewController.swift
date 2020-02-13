@@ -21,6 +21,11 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+       
+        //Gradiant Color
+        let gradient = CAGradientLayer(start: .topLeft, end: .bottomRight, colors: [UIColor.orange.cgColor, UIColor.yellow.cgColor], type: .radial)
+        gradient.frame = view.bounds
+        self.view.layer.insertSublayer(gradient, at: 0)
         self.setHeaderView()
         self.settextfield()
         
