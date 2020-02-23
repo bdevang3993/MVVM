@@ -74,10 +74,16 @@ extension CartViewController:UITableViewDelegate,UITableViewDataSource {
         if indexPath.section == 0 {
             let objcell = tblDisplay.dequeueReusableCell(withIdentifier: "CartTableViewCell") as! CartTableViewCell
             objcell.tblTag = indexPath.section
+            objcell.selectedSectionIndex = { [weak self] (section,indexPath) in
+                          print("Selected section = \(section) and indexPath = \(indexPath)")
+                      }
             return objcell
         }else {
             let objcell = tblDisplay.dequeueReusableCell(withIdentifier: "CartTableViewCell") as! CartTableViewCell
             objcell.tblTag = indexPath.section
+            objcell.selectedSectionIndex = { [weak self] (section,indexPath) in
+                print("Selected section = \(section) and indexPath = \(indexPath)")
+            }
             return objcell
         }
         

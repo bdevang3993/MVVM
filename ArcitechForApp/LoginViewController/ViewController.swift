@@ -60,26 +60,27 @@ class ViewController: UIViewController,UITextFieldDelegate {
         userViewModel.email = txtEmail.text!
         txtPassword.text = removeWhiteSpace(strData: txtPassword.text!)
         userViewModel.password = txtPassword.text!
+        self.moveToNextView()
 //        userViewModel.userModel.email = txtEmail.text!
 //        userViewModel.userModel.password = txtPassword.text!
-        do {
-            let value = try userViewModel.validationOfData()//validationOfData()
-            if value {
-                self.moveToNextView()
-            }
-        }
-        catch LoginValidation.emailEmpty {
-            Alert().showAlert(message: LoginValidation.emailEmpty.loginValidationDescription(), viewController: self)
-        }
-        catch LoginValidation.passwordEmpty {
-            Alert().showAlert(message: LoginValidation.passwordEmpty.loginValidationDescription(), viewController: self)
-        }
-        catch LoginValidation.emailIdnotmatch {
-            Alert().showAlert(message: LoginValidation.emailIdnotmatch.loginValidationDescription(), viewController: self)
-        }
-        catch {
-             Alert().showAlert(message: LoginValidation.emailIdnotmatch.loginValidationDescription(), viewController: self)
-        }
+//        do {
+//            let value = try userViewModel.validationOfData()//validationOfData()
+//            if value {
+//                self.moveToNextView()
+//            }
+//        }
+//        catch LoginValidation.emailEmpty {
+//            Alert().showAlert(message: LoginValidation.emailEmpty.loginValidationDescription(), viewController: self)
+//        }
+//        catch LoginValidation.passwordEmpty {
+//            Alert().showAlert(message: LoginValidation.passwordEmpty.loginValidationDescription(), viewController: self)
+//        }
+//        catch LoginValidation.emailIdnotmatch {
+//            Alert().showAlert(message: LoginValidation.emailIdnotmatch.loginValidationDescription(), viewController: self)
+//        }
+//        catch {
+//             Alert().showAlert(message: LoginValidation.emailIdnotmatch.loginValidationDescription(), viewController: self)
+//        }
     }
     @IBAction func bntDatabaseDemoClicked(_ sender: Any) {
         

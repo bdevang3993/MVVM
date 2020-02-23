@@ -7,10 +7,11 @@
 //
 
 import UIKit
-
+typealias taIndexandSection = (Int,Int) -> Void
 class CartTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    var selectedSectionIndex:taIndexandSection?
     var tblTag:Int = 0 {
         didSet {
             self.collectionView.reloadData()
@@ -28,6 +29,7 @@ class CartTableViewCell: UITableViewCell {
     }
     //MARK: - Set up collection View
     func setCollectionView() {
+        print("All Data")
         collectionView.delegate = self
         collectionView.dataSource = self
         let flow = collectionView.collectionViewLayout as! UICollectionViewFlowLayout // If you create collectionView programmatically then just create this flow by UICollectionViewFlowLayout() and init a collectionView by this flow.
@@ -48,12 +50,15 @@ class CartTableViewCell: UITableViewCell {
     
 }
 extension CartTableViewCell: UICollectionViewDelegate,UICollectionViewDataSource {
-   
+    
+   func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int   {
+       return 2
+   }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if tblTag == 1 {
             return 5
         }else {
-            return 10
+            return 1
         }
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -71,7 +76,12 @@ extension CartTableViewCell: UICollectionViewDelegate,UICollectionViewDataSource
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Slected section = \(indexPath.section) and Selected Index = \(indexPath.row)")
+        print("Slected section = \(tblTag) and Selected Index = \(indexPath.row)")
+        var indxpath:Int = 0
+        if indexPath.row != nil {
+            indxpath = indexPath.row
+        }
+        selectedSectionIndex!(tblTag,indxpath)
     }
 }
 
