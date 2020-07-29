@@ -28,13 +28,13 @@
 		8811965023C0E35100BD7544 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8811964F23C0E35100BD7544 /* AuthenticationServices.framework */; };
 		8811965223C0E86400BD7544 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8811965123C0E86400BD7544 /* CloudKit.framework */; };
 		881890D724D1948D0005A331 /* dune.png in Resources */ = {isa = PBXBuildFile; fileRef = 881890D624D1948D0005A331 /* dune.png */; };
-		8825542123C8876E005A195B /* DatbaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825542023C8876E005A195B /* DatbaseViewController.swift */; };
-		8825542323C89081005A195B /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825542223C89081005A195B /* HeroModel.swift */; };
-		8825542523C8915D005A195B /* DatabaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825542423C8915D005A195B /* DatabaseViewModel.swift */; };
 		8880391923B730F800F3A6EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8880391823B730F800F3A6EC /* SystemConfiguration.framework */; };
 		8880391B23B734BA00F3A6EC /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880391A23B734BA00F3A6EC /* APIRequest.swift */; };
 		8880396323B788D900F3A6EC /* CommanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8880396123B788D900F3A6EC /* CommanView.xib */; };
 		8880396423B788D900F3A6EC /* CommanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880396223B788D900F3A6EC /* CommanView.swift */; };
+		88E7DA0F24D19FF200528FB0 /* DirectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E7DA0D24D19FF200528FB0 /* DirectionViewModel.swift */; };
+		88E7DA1024D19FF200528FB0 /* DirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E7DA0E24D19FF200528FB0 /* DirectionViewController.swift */; };
+		88E7DA1224D1A07200528FB0 /* CustomAnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E7DA1124D1A07200528FB0 /* CustomAnotation.swift */; };
 		88FE139223C0618100489BD0 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE139123C0618100489BD0 /* Source.swift */; };
 		88FE139423C061A700489BD0 /* SourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE139323C061A700489BD0 /* SourceViewModel.swift */; };
 		88FE139623C061C100489BD0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE139523C061C100489BD0 /* CustomCell.swift */; };
@@ -98,13 +98,13 @@
 		8811964F23C0E35100BD7544 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		8811965123C0E86400BD7544 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		881890D624D1948D0005A331 /* dune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dune.png; sourceTree = "<group>"; };
-		8825542023C8876E005A195B /* DatbaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatbaseViewController.swift; sourceTree = "<group>"; };
-		8825542223C89081005A195B /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
-		8825542423C8915D005A195B /* DatabaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseViewModel.swift; sourceTree = "<group>"; };
 		8880391823B730F800F3A6EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8880391A23B734BA00F3A6EC /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		8880396123B788D900F3A6EC /* CommanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommanView.xib; sourceTree = "<group>"; };
 		8880396223B788D900F3A6EC /* CommanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommanView.swift; sourceTree = "<group>"; };
+		88E7DA0D24D19FF200528FB0 /* DirectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionViewModel.swift; sourceTree = "<group>"; };
+		88E7DA0E24D19FF200528FB0 /* DirectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionViewController.swift; sourceTree = "<group>"; };
+		88E7DA1124D1A07200528FB0 /* CustomAnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnotation.swift; sourceTree = "<group>"; };
 		88FE139123C0618100489BD0 /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		88FE139323C061A700489BD0 /* SourceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceViewModel.swift; sourceTree = "<group>"; };
 		88FE139523C061C100489BD0 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 				8808CD0D23BFA8AE00DC090F /* LoginViewController */,
 				88FFDF9823D307810025F892 /* CartViewController */,
 				88FE138D23C0612600489BD0 /* InformationViewController */,
-				8825541F23C885FB005A195B /* SQLiteDataBase */,
+				88E7DA0C24D19FD000528FB0 /* MapDirection */,
 				8880391523B7301800F3A6EC /* APIRequest */,
 				8802A15F23B6715E0067BB48 /* Main.storyboard */,
 				8802A16223B671600067BB48 /* Assets.xcassets */,
@@ -245,16 +245,6 @@
 			path = SignUpViewController;
 			sourceTree = "<group>";
 		};
-		8825541F23C885FB005A195B /* SQLiteDataBase */ = {
-			isa = PBXGroup;
-			children = (
-				8825542223C89081005A195B /* HeroModel.swift */,
-				8825542423C8915D005A195B /* DatabaseViewModel.swift */,
-				8825542023C8876E005A195B /* DatbaseViewController.swift */,
-			);
-			path = SQLiteDataBase;
-			sourceTree = "<group>";
-		};
 		8880391523B7301800F3A6EC /* APIRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +260,16 @@
 				8880396123B788D900F3A6EC /* CommanView.xib */,
 			);
 			path = Commanxib;
+			sourceTree = "<group>";
+		};
+		88E7DA0C24D19FD000528FB0 /* MapDirection */ = {
+			isa = PBXGroup;
+			children = (
+				88E7DA0E24D19FF200528FB0 /* DirectionViewController.swift */,
+				88E7DA0D24D19FF200528FB0 /* DirectionViewModel.swift */,
+				88E7DA1124D1A07200528FB0 /* CustomAnotation.swift */,
+			);
+			path = MapDirection;
 			sourceTree = "<group>";
 		};
 		88FE138D23C0612600489BD0 /* InformationViewController */ = {
@@ -574,19 +574,19 @@
 				88FFDFA223D498F30025F892 /* CartModel.swift in Sources */,
 				88FE139223C0618100489BD0 /* Source.swift in Sources */,
 				8808CD1823BFBB9100DC090F /* SignUpViewController.swift in Sources */,
-				8825542123C8876E005A195B /* DatbaseViewController.swift in Sources */,
-				8825542523C8915D005A195B /* DatabaseViewModel.swift in Sources */,
 				8802A18C23B67CC90067BB48 /* Constant.swift in Sources */,
 				8802A15A23B6715E0067BB48 /* AppDelegate.swift in Sources */,
 				88FFDF9C23D30DDF0025F892 /* CartTableViewCell.swift in Sources */,
 				88FFDFA023D30E380025F892 /* CartViewModel.swift in Sources */,
+				88E7DA0F24D19FF200528FB0 /* DirectionViewModel.swift in Sources */,
 				88FFDF9E23D30E080025F892 /* CartCollectionViewCell.swift in Sources */,
 				8880391B23B734BA00F3A6EC /* APIRequest.swift in Sources */,
-				8825542323C89081005A195B /* HeroModel.swift in Sources */,
 				88FE139423C061A700489BD0 /* SourceViewModel.swift in Sources */,
 				88FFDF9A23D307BF0025F892 /* CartViewController.swift in Sources */,
+				88E7DA1024D19FF200528FB0 /* DirectionViewController.swift in Sources */,
 				8808CD1023BFA92200DC090F /* UserModel.swift in Sources */,
 				8802A15C23B6715E0067BB48 /* SceneDelegate.swift in Sources */,
+				88E7DA1224D1A07200528FB0 /* CustomAnotation.swift in Sources */,
 				88FE139823C0623D00489BD0 /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

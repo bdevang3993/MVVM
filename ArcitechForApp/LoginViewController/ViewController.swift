@@ -62,8 +62,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     func moveToNextView() {
         print("Move to next view")
       
-        let objInformation = self.storyboard?.instantiateViewController(identifier: "InformationViewController") as! InformationViewController
-        self.navigationController?.pushViewController(objInformation, animated: true)
+//        let objInformation = self.storyboard?.instantiateViewController(identifier: "InformationViewController") as! InformationViewController
+//        self.navigationController?.pushViewController(objInformation, animated: true)
     }
     
     //MARK:-Local Notification Request
@@ -138,8 +138,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
 //        }
     }
     @IBAction func bntDatabaseDemoClicked(_ sender: Any) {
-        let objDatabase  = self.storyboard?.instantiateViewController(identifier: "DatbaseViewController") as! DatbaseViewController
-        self.navigationController?.pushViewController(objDatabase, animated: true)
+        let objDirection  = self.storyboard?.instantiateViewController(identifier: "DirectionViewController") as! DirectionViewController
+        self.navigationController?.pushViewController(objDirection, animated: true)
     }
     
     @IBAction func CollectionViewClicked(_ sender: Any) {
