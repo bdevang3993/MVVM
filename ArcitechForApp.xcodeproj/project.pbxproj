@@ -27,6 +27,7 @@
 		8808CD1C23BFC29E00DC090F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8808CD1B23BFC29E00DC090F /* SignUpViewModel.swift */; };
 		8811965023C0E35100BD7544 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8811964F23C0E35100BD7544 /* AuthenticationServices.framework */; };
 		8811965223C0E86400BD7544 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8811965123C0E86400BD7544 /* CloudKit.framework */; };
+		881890D724D1948D0005A331 /* dune.png in Resources */ = {isa = PBXBuildFile; fileRef = 881890D624D1948D0005A331 /* dune.png */; };
 		8825542123C8876E005A195B /* DatbaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825542023C8876E005A195B /* DatbaseViewController.swift */; };
 		8825542323C89081005A195B /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825542223C89081005A195B /* HeroModel.swift */; };
 		8825542523C8915D005A195B /* DatabaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825542423C8915D005A195B /* DatabaseViewModel.swift */; };
@@ -96,6 +97,7 @@
 		8811964E23C0E32000BD7544 /* ArcitechForApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArcitechForApp.entitlements; sourceTree = "<group>"; };
 		8811964F23C0E35100BD7544 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		8811965123C0E86400BD7544 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		881890D624D1948D0005A331 /* dune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dune.png; sourceTree = "<group>"; };
 		8825542023C8876E005A195B /* DatbaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatbaseViewController.swift; sourceTree = "<group>"; };
 		8825542223C89081005A195B /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 		8825542423C8915D005A195B /* DatabaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseViewModel.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 		8808CD0D23BFA8AE00DC090F /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
+				881890D624D1948D0005A331 /* dune.png */,
 				8808CD0E23BFA92100DC090F /* UserModel.swift */,
 				8808CD0F23BFA92100DC090F /* UserViewModel.swift */,
 				8802A15D23B6715E0067BB48 /* ViewController.swift */,
@@ -428,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8802A16623B671600067BB48 /* LaunchScreen.storyboard in Resources */,
+				881890D724D1948D0005A331 /* dune.png in Resources */,
 				8880396323B788D900F3A6EC /* CommanView.xib in Resources */,
 				8802A16323B671600067BB48 /* Assets.xcassets in Resources */,
 				8802A16123B6715E0067BB48 /* Main.storyboard in Resources */,
@@ -781,8 +785,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ArcitechForApp/ArcitechForApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JAC5BA3SM4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ArcitechForApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

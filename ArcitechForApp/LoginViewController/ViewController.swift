@@ -16,9 +16,19 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     var headerViewXib:CommanView?
+    
+    
+    //Local Notification
+    let userNotificationCenter = UNUserNotificationCenter.current()
+    let authOptions = UNAuthorizationOptions.init(arrayLiteral: .alert, .badge, .sound)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.userNotificationCenter.delegate = self
+        self.requestNotificationAuthorization()
+        self.sendNotification()
         self.setHeaderView()
         self.setTextfield()
     }
@@ -55,6 +65,51 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let objInformation = self.storyboard?.instantiateViewController(identifier: "InformationViewController") as! InformationViewController
         self.navigationController?.pushViewController(objInformation, animated: true)
     }
+    
+    //MARK:-Local Notification Request
+      func requestNotificationAuthorization() {
+          // Code here
+          let authOptions = UNAuthorizationOptions.init(arrayLiteral: .alert, .badge, .sound)
+          self.userNotificationCenter.requestAuthorization(options: authOptions) { (success, error) in
+              if let error = error {
+                  print("Error: ", error)
+              }
+          }
+      }
+
+      func sendNotification() {
+          // Code here
+          let notificationContent = UNMutableNotificationContent()
+             notificationContent.title = "Test"
+             notificationContent.body = "Test body"
+             notificationContent.badge = NSNumber(value: 3)
+             
+             if let url = Bundle.main.url(forResource: "dune",
+                                         withExtension: "png") {
+                 if let attachment = try? UNNotificationAttachment(identifier: "dune",
+                                                                 url: url,
+                                                                 options: nil) {
+                     notificationContent.attachments = [attachment]
+                 }
+             }
+             
+             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5,
+                                                             repeats: false)
+             let request = UNNotificationRequest(identifier: "testNotification",
+                                                 content: notificationContent,
+                                                 trigger: trigger)
+             
+             userNotificationCenter.add(request) { (error) in
+                 if let error = error {
+                     print("Notification Error: ", error)
+                 }
+             }
+      }
+    
+    
+    
+    
+    
     @IBAction func btnSubmitClicked(_ sender: Any) {
         txtEmail.text = removeWhiteSpace(strData: txtEmail.text!)
         userViewModel.email = txtEmail.text!
@@ -92,4 +147,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
         self.navigationController?.pushViewController(objData, animated: true)
     }
 }
+extension ViewController: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        completionHandler()
+    }
 
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .badge, .sound])
+    }
+}

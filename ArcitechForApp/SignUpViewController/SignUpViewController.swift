@@ -18,10 +18,17 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     //Type Define Variable
     var objTaSignUpModel:TaSignUpModel?
     var headerViewXib:CommanView?
+    
+    
+    //Local Notification
+    let userNotificationCenter = UNUserNotificationCenter.current()
+    let authOptions = UNAuthorizationOptions.init(arrayLiteral: .alert, .badge, .sound)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       
+      
+    
         //Gradiant Color
         let gradient = CAGradientLayer(start: .topLeft, end: .bottomRight, colors: [UIColor.orange.cgColor, UIColor.yellow.cgColor], type: .radial)
         gradient.frame = view.bounds
@@ -29,6 +36,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         self.setHeaderView()
         self.settextfield()
         
+      
     }
     //MARK:- HeaderView
        func setHeaderView() {
@@ -107,6 +115,12 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         objTaSignUpModel!(objSignUpViewModel.signUpModel)
         self.dismiss(animated: true, completion: nil)
     }
+    
+    
+    
+    
+  
+    
     /*
     // MARK: - Navigation
 
@@ -118,3 +132,4 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     */
 
 }
+
