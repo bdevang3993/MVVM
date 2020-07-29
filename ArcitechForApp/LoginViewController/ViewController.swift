@@ -83,12 +83,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
 //        }
     }
     @IBAction func bntDatabaseDemoClicked(_ sender: Any) {
-        
-        let objData = self.storyboard?.instantiateViewController(identifier: "CartViewController") as! CartViewController
-              self.navigationController?.pushViewController(objData, animated: true)
-//        let objDatabase  = self.storyboard?.instantiateViewController(identifier: "DatbaseViewController") as! DatbaseViewController
-//        self.navigationController?.pushViewController(objDatabase, animated: true)
+        let objDatabase  = self.storyboard?.instantiateViewController(identifier: "DatbaseViewController") as! DatbaseViewController
+        self.navigationController?.pushViewController(objDatabase, animated: true)
     }
     
+    @IBAction func CollectionViewClicked(_ sender: Any) {
+        let objData = self.storyboard?.instantiateViewController(identifier: "CartViewController") as! CartViewController
+        self.navigationController?.pushViewController(objData, animated: true)
+    }
 }
 

@@ -41,3 +41,8 @@ func setCommanHeaderView() -> CommanView {
     headerViewXib.frame = CGRect(x: 0, y: 0, width: screenWidth, height: (screenHeight * 0.1))
     return headerViewXib
 }
+func setCommanHeaderViewWithArgument(width:CGFloat) -> CommanView {
+    let headerViewXib:CommanView = CommanView().instanceFromNib()
+    headerViewXib.frame = CGRect(x: 0, y: 0, width: width, height: (screenHeight * 0.1))
+    return headerViewXib
+}
