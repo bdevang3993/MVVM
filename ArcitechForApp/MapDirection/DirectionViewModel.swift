@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
-
+//New data set up all
 class DirectionViewModel: NSObject {
     var headerViewXib:CommanView?
     //MARK:- HeaderView
