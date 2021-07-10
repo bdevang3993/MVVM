@@ -32,6 +32,9 @@ enum LoginValidation:Error {
         }
     }
 }
+enum NewDataValueAvailable:String {
+    case newDataFound
+}
 enum ShowAlertMessage:String {
     case errorMessage
    
