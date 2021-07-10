@@ -10,7 +10,9 @@ import UIKit
 //MARK:- TypeDefine Declaration
 typealias TaSignUpModel = (SignUpModel) -> Void
 typealias TaAPICallBack = (String) -> Void
-
+typealias TransferAPICallBack = (String) -> Void
+func modifyData()  {
+}
 //MARK:- Custom TextField Method
 func setCustomTextField(self:UITextField,placeHolder:String) -> UITextField {
     self.font = UIFont(name: CustomFontName().textfieldFontName, size: CustomFontSize().textfieldFontSize)
